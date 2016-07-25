@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body
+	{
+		margin:0px;
+		padding: 0px;
+	}
+	#back-bg
+	{
+		margin:0px auto;
+		background-image:url("img/title-1.jpg"); 
+		background-size:100% 100%;
+		width: 100%;
+		height:500px;
+		background-repeat:no-repeat;overflow:hidden;
+		position: relative;
+	}
+	#fog-layer
+	{
+		background-image:url("img/fog_1.png");
+		background-repeat:repeat-y;
+		width: 1077px;
+		position: absolute;
+		height:383px;
+		z-index: 2;
+		-webkit-transform:translateX(0px);
+		-webkit-animation-name:fogg1;
+		-webkit-animation-duration:40s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:linear;
+		-moz-transform:translateX(0px);
+		-moz-animation-name:fogg1;
+		-moz-animation-duration:40s;
+		-moz-animation-iteration-count:infinite;
+		-moz-animation-timing-function:linear;
+		transform:translateX(0px);
+		animation-name:fogg1;
+		animation-duration:40s;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+	}
+	#fog-layer2
+	{
+		background-image:url("img/fog_1.png");
+		width: 1077px;
+		background-repeat:no-repeat;
+		position: absolute;
+		height:383px;
+		z-index: 5;
+		-moz-transform:translateX(1077px);
+		-moz-animation-name:fogg2;
+		-moz-animation-duration:40s;
+		-moz-animation-iteration-count:infinite;
+		-moz-animation-timing-function:linear;
+		-webkit-transform:translateX(1077px);
+		-webkit-animation-name:fogg2;
+		-webkit-animation-duration:40s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:linear;
+		transform:translateX(1077px);
+		animation-name:fogg2;
+		animation-duration:40s;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+	}
+	-webkit-@keyFrames fogg1
+	{
+		from{
+			transform:translateX(0px);
+		}
+		to
+		{
+			transform:translateX(-1077px);
+		}
+
+	}
+	-moz-@keyFrames fogg1
+	{
+		from{
+			transform:translateX(0px);
+		}
+		to
+		{
+			transform:translateX(-1077px);
+		}
+
+	}
+	@keyFrames fogg1
+	{
+		from{
+			transform:translateX(0px);
+		}
+		to
+		{
+			transform:translateX(-1077px);
+		}
+
+	}
+	-webkit-@keyFrames fogg2
+	{
+		from{
+			transform:translateX(1077px);
+		}
+		to
+		{
+			transform:translateX(0px);
+		}
+
+	}
+	-moz-@keyFrames fogg2
+	{
+		from{
+			transform:translateX(1077px);
+		}
+		to
+		{
+			transform:translateX(0px);
+		}
+
+	}
+	@keyFrames fogg2
+	{
+		from{
+			transform:translateX(1077px);
+		}
+		to
+		{
+			transform:translateX(0px);
+		}
+
+	}
+	#overlay
+	{
+		background-image:url("img/overlay.png");
+		width: 649px;
+		height:362px;
+		position: absolute;
+		z-index: 6;
+		left:25%;
+		bottom:0;
+	}
+	@media screen and (max-width:768px)
+	{
+		#overlay
+		{
+			background-image:url("img/overlay.png");
+			width: 649px;
+			
+			height:362px;
+			position: absolute;
+			z-index: 6;
+			left:0;
+			bottom:0;
+		}
+	#back-bg
+	{
+		
+		width: 100%;
+		height:380px;
+		background-repeat:no-repeat;overflow:hidden;
+		position: relative;
+	}
+			
+	}
+
+	</style>
+</head>
+<body>
+	<div id="back-bg">
+		<div id="fog-layer">
+			
+		</div>
+        <div id="fog-layer2">
+			
+		</div>
+		<div id="overlay">
+		</div>
+	</div>
+</body>
+</html>
